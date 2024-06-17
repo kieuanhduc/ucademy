@@ -17,8 +17,8 @@ const page = async({ searchParams }:{
 
     return (
         <div>
-            <Heading>Cập nhật khóa học - {findCourse.title}</Heading>
-            <CourseUpdate></CourseUpdate>
+            <Heading>Cập nhật khóa học</Heading>
+            <CourseUpdate data={JSON.parse(JSON.stringify(findCourse))} />
         </div>
     );
 };

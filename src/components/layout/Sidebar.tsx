@@ -27,7 +27,7 @@ const Sidebar = () => {
           ></MenuItem>
         ))}
       </ul>
-      <div className="mt-auto flex items-center justify-end gap-2">
+      {/* <div className="mt-auto flex items-center justify-end gap-2">
         <ModeToggle></ModeToggle>
         {!userId ? (
           <Link
@@ -39,7 +39,7 @@ const Sidebar = () => {
         ) : (
           <UserButton />
         )}
-      </div>
+      </div> */}
     </div>
   );
 };
