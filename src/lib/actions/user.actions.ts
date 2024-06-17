@@ -15,16 +15,13 @@ export  async function createUser(params: TCreateUserParams) {
     }
 }
 
-export  async function getUserInfo({ userId }: { userId: string }) : Promise<IUser | undefined>{
-    
-    try{
+export async function getUserInfo({ userId }: { userId: string }) : Promise<IUser | undefined> {
+    try {
         connectToDatabase();
         const getUser = await User.findOne({clerkId:userId});
-        if(!getUser) return null;
+        if (!getUser) return undefined;
         return getUser;
-
-    }catch(error){
+    } catch (error) {
         console.log(error);
     }
-
 }
