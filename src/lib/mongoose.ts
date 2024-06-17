@@ -13,11 +13,12 @@ export const connectToDatabase = async () => {
     return;
   }
   try {
-    await mongoose.connect(process.env.MONGODB_URL, {
+    let res_connect = await mongoose.connect(process.env.MONGODB_URL, {
       dbName: "ucademy",
     });
     isConnected = true;
     console.log("Using new database connection");
+    // console.log("connected to database",res_connect);
   } catch (error) {
     console.log("Error while connecting to database");
   }

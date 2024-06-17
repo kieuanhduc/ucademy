@@ -1,4 +1,4 @@
-import { ELessonType } from "@/types/enums";
+import { ELessonType } from "@/types/enum";
 import { Schema, model, models } from "mongoose";
 
 export interface ILesson extends Document {
