@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { ICourse } from "@/database/course.model";
+import { ICourse } from "@/app/database/course.model";
 import { updateCourse } from "@/lib/actions/course.actions";
 import { ECourseLevel, ECourseStatus } from "@/types/enum";
 import { useRouter } from "next/navigation";

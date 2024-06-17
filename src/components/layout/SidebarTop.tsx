@@ -3,6 +3,7 @@ import { UserButton, useAuth } from "@clerk/nextjs";
 import React from "react";
 import { ModeToggle } from "../../components/common";
 import { IconUsers } from "../../components/icons";
+import Link from "next/link";
 
 
 const SidebarTop = () => {

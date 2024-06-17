@@ -1,7 +1,7 @@
-import { ICourse } from "@/database/course.model";
 import Image from "next/image";
 import Link from "next/link";
 import { IconClock, IconEye, IconStar } from "../icons";
+import { ICourse } from "@/app/database/course.model";
 const CourseItem = ({ data }: { data: ICourse }) => {
   const courseInfo = [
     {
