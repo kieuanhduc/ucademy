@@ -45,3 +45,18 @@
 # Next/Image
 - Image yêu càu có 3 thuộc tính bắt buộc là : alt, width , height 
 - Nếu sử dụng thuộc tính fill thì không cần width , height . Tuy nhiên thẻ img sẽ trở thành absolute , cho nên cần có 1 phàn tử chứa nó là relative 
+
+
+# Mongoose
+- Schema trong mongoose là 1 đối tượng xác định cấu trúc của tài liệu trong 1 collection của mongodb. Nó cho phép định nghĩa các trường , kiểu dữ liệu và các ràng buộc cho dữ liệu 
+
+- Ví dụ : Collection `users` có `document` là :
+ ```js
+{
+  "_id": {
+    "$oid": "5a9427648b0beebeb69579e7"
+  },
+  "name": "Mercedes Tyler",
+  "email": "mercedes_tyler@fakegmail.com",
+}
+ ```
