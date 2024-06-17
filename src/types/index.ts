@@ -1,20 +1,18 @@
-type TActiveLinkProps = {
+export type TActiveLinkProps = {
     url: string;
     children: React.ReactNode;
-};
-
-type TMenuItem = {
+  };
+  export type TMenuItem = {
     url: string;
     title: string;
     icon: React.ReactNode;
-};
-
-// User 
-type TCreateUserParams = {
+  };
+  // User
+  export type TCreateUserParams = {
     clerkId: string;
     username: string;
     email_address: string;
     name?: string;
     avatar?: string;
   };
-export { TActiveLinkProps, TMenuItem , TCreateUserParams };
+  export { TActiveLinkProps, TCreateUserParams, TMenuItem };
