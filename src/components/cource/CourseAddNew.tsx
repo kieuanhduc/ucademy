@@ -59,10 +59,12 @@ function CourseAddNew() {
       console.log(res);
       if (res?.success) {
         toast.success("Tạo khóa học thành công");
+      }else{
+        toast.error(res?.message);
       }
-    //   if (res?.data) {
-    //     router.push(`/manage/course/update?slug=${res.data.slug}`);
-    //   }
+      if (res?.data) {
+        router.push(`/manage/course/update?slug=${res.data.slug}`);
+      }
     } catch (error) {
     } finally {
       setIsSubmitting(false);
