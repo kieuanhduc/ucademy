@@ -48,7 +48,7 @@ const page = async ({
                     </div>
                 </BoxSection>
                 <BoxSection title="Yêu cầu">
-                    {data.info.requirements.map((r, index) => (
+                    {data.info.requirements.map((r:string, index:number) => (
                         <div key={index} className="mb-3 flex items-center gap-2">
                             <span className="flex-shrink-0 size-5 bg-primary text-white p-1 rounded flex items-center justify-center">
                                 <svg
@@ -71,7 +71,7 @@ const page = async ({
                     ))}
                 </BoxSection>
                 <BoxSection title="Lợi ích">
-                    {data.info.benefits.map((r, index) => (
+                    {data.info.benefits.map((r:string, index:number) => (
                         <div key={index} className="mb-3 flex items-center gap-2">
                             <span className="flex-shrink-0 size-5 bg-primary text-white p-1 rounded flex items-center justify-center">
                                 <svg
@@ -94,7 +94,7 @@ const page = async ({
                     ))}
                 </BoxSection>
                 <BoxSection title="Q.A">
-                    {data.info.qa.map((qa, index) => (
+                    {data.info.qa.map((qa: { question: string; answer: string }, index: number) => (
                         <div key={index}>
                             <div>{qa.question}</div>
                             <div>{qa.answer}</div>
