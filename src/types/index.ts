@@ -3,6 +3,7 @@ import { ICourse } from "@/app/database/course.model";
 type TActiveLinkProps = {
     url: string;
     children: React.ReactNode;
+    className?: string; // Add this line
   };
 type TMenuItem = {
     url: string;
